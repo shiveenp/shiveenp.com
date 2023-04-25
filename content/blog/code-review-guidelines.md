@@ -1,6 +1,6 @@
 ---
 title: Code Review Principles
-date: 2022-01-25T14:55:31+11:00
+date: 2023-04-25T14:55:31+11:00
 tags: ["software"]
 ---
 
