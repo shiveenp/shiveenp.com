@@ -21,7 +21,7 @@ On top of that, as a maintainer, you will most likely have the same amount of wo
 However, there are distinct advantages to adopting a maintainer mentality. The chief benefit, in my opinion, is that it's a great way to break through the monotony of the current state of software engineering, which is just yet another flavour of a
 CRUD app. Unless you're in a true deep engineering discipline (think quantum computing, building machine learning models from scratch etc.). Not only that, being in *maintainer mode* creates a great intuition for reviewing PRs and system designs, allowing you to spot potential future problems in both without needing to wait for things to play out in production. This will give you the confidence to make technical decisions that don't sacrifice the health of the software or the service to reach a local maxima since it's not a zero-sum game.
 
-To sum up, both choices are good. But I usually find it easier and nicer to work with people with a maintainer mentality.
+To sum up, both choices are good. I think in most instances people can mould their behaviour to either mentality based on the current needs of their productπ and team.
 
 [^1]: [How open source maintainers keep contributors—and themselves—happy](https://github.com/readme/featured/contributor-relations)
 [^2]: [Software evolution: the lifetime of fine-grained elements](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7959608/)
