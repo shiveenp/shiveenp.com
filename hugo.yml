@@ -1,0 +1,46 @@
+baseURL: "https://shiveenp.com/"
+languageCode: "en-us"
+title: "Shiveen Pandita"
+theme: "papermod"
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: About
+          url: /about
+          weight: 5
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+
+params:
+  homeInfoParams:
+    Title: hi, welcome 👋
+    Content: this is a small space for me to sporadically write content
+  socialIcons:
+    - name: github
+      url: "https://github.com/shiveenp"
+    - name: X
+      url: "https://twitter.com/shiveen_p"
+    - name: "rss"
+      url: "https://shiveenp.com/index.xml"
+  ShowFullTextInRss: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
