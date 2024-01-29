@@ -1,7 +1,7 @@
 baseURL: "https://shiveenp.com/"
 languageCode: "en-us"
 title: "Shiveen Pandita"
-theme: "github.com/adityatelange/hugo-PaperMod"
+theme: "papermod"
 
 languages:
   en:
