@@ -12,7 +12,7 @@ them for coming up to 3 years now. The way I use it on my Mac is via profiles, w
 to any app that uses system dns. Chrome doesn't follow system dns but the setting is easily avaiable in preference. However,
 I couldn't find anything that allowed me to change this setting readily in Arc, since their settings panel is kinda sparse. which resulted in:
 
-<img src="/img/no-next-dns.png">
+<img src="/img/no-next-dns.png" alt="Image showing no next dns configured for ARC">
 
 However, you can override the macos system dns settings to make it work. Just run:
 
