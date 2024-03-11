@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+---
+You can find me on <a href="https://www.goodreads.com/user/show/21811644-shiveen-pandita">Goodreads</a> ✌🏼
+
+<h3>2024</h3>
+<p>{{ readingList.books2024.commentary }}</p>
+<ul>
+{%- for book in readingList.books2024.readBooks %}
+  <li><a href="{{ book.goodreadsLink }}">{{ book.title }}</a> : <b>{{ book.rating }}</b></li>
+{%- endfor %}
+</ul>
+
+<hr>
+
+<h3>2023</h3>
+<p>{{ readingList.books2023.commentary }}</p>
+<ul>
+{%- for book in readingList.books2023.readBooks %}
+  <li><a href="{{ book.goodreadsLink }}">{{ book.title }}</a> : <b>{{ book.rating }}</b></li>
+{%- endfor %}
+</ul>
