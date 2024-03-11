@@ -1,0 +1,52 @@
+{
+	"books2024": {
+		"commentary": "",
+		"readBooks": [
+			{
+				"title": "Persians: The Age of the Great Kings",
+				"rating": "3/5",
+				"goodreadsLink": "https://www.goodreads.com/book/show/58684542-persians"
+			},
+			{
+				"title": "Xeelee: Vengeance",
+				"rating": "2/5",
+				"goodreadsLink": "https://www.goodreads.com/book/show/33814765-xeelee"
+			}
+		]
+	},
+	"books2023": {
+		"commentary": "2023 was a bit of a down year for me when it came to books read due to a lot of personal changes. I plan to change that next year.",
+		"readBooks": [
+			{
+				"title": "Xeelee Omnibus",
+				"rating": "4/5",
+				"goodreadsLink": "https://www.goodreads.com/book/show/11724214-xeelee"
+			},
+			{
+				"title": "Absolution Gap",
+				"rating": "4/5",
+				"goodreadsLink": "https://www.goodreads.com/book/show/11804021-absolution-gap"
+			},
+			{
+				"title": "Building a Second Brain",
+				"rating": "2/5",
+				"goodreadsLink": "https://www.goodreads.com/book/show/59616977-building-a-second-brain"
+			},
+			{
+				"title": "Redemption Ark",
+				"rating": "4/5",
+				"goodreadsLink": "https://www.goodreads.com/book/show/89190.Redemption_Ark"
+			},
+			{
+				"title": "Revelation Space",
+				"rating": "4/5",
+				"goodreadsLink": "https://www.goodreads.com/book/show/89187.Revelation_Space"
+			},
+			{
+				"title": "Piranesi",
+				"rating": "3/5",
+				"goodreadsLink": "https://www.goodreads.com/book/show/50202953-piranesi"
+			}
+		]
+	}
+}
