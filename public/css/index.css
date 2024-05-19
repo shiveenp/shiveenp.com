@@ -273,3 +273,17 @@ a[href].header-anchor:focus,
 h2 + .header-anchor {
 	font-size: 1.5em;
 }
+
+blockquote {
+	margin-left: 0.5em;
+	padding-left: 1em;
+	border-left: 2px solid #ccc;
+	font-weight: bold;
+}
+
+figcaption {
+	text-align: center;
+  font-size: 0.875em;
+  color: var(--color-gray-50);
+  margin-top: 0.5em;
+}
