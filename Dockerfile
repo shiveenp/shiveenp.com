@@ -1,11 +1,20 @@
-FROM okteto/node:10 as dev
-WORKDIR /okteto
-RUN npm install -g @11ty/eleventy
+# Set the base image to Node
+FROM node:lts
 
-FROM dev as build
-COPY shiveenp.com .
-# generate the website in _site
-RUN eleventy --formats=liquid,html,jpg,gif
+# Set a working directory where 11ty will run
+WORKDIR /usr/src/app
 
-FROM bitnami/nginx as website
-COPY --from=build /okteto/_site /app
+# Copy over the package.json and package-lock.json file
+COPY package*.json ./
+
+# Install dependencies - everything in node_modules
+RUN npm install
+
+# Copy the rest of your website source
+COPY . .
+
+# Build your website (this will output static files into the _site directory)
+RUN npx eleventy
+
+# Specify the command to run when the container is started.
+CMD [ "npx", "eleventy", "--serve" ]
