@@ -6,8 +6,9 @@ eleventyNavigation:
 ---
 # About Me
 
-👋🏽 Hey, I'm [@Shiveen](https://twitter.com/shiveen_p), and welcome to my blog. I'm a polyglot cross-stack developer based in [Melbourne](https://www.melbourne.vic.gov.au/Pages/home.aspx).
+👋 Hello, I'm Shiveen Pandita, currently an engineer at Atlassian. I am passionate about building
+tech and leading teams to building software with purpose.
 
-I blog about software and life in general. This website is a personal record of some TILs, nano product experiments with some life commentary mixed in.
+In my free time I like to spend time cooking, exploring new hiking trails and spending time with my family.
 
-When I'm not working behind a computer, I love bouldering, Muay Thai, cooking and taking pictures.
+You can find me on [LinkedIn](https://www.linkedin.com/in/shiveenp/), [X](https://x.com/shiveen_p), [Github](https://github.com/shiveenp) or [Email](mailto:blog@shiveenp.com).
