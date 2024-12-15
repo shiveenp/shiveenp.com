@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	title: "Shiveen Pandita",
 	url: "https://shiveenp.com/",
 	language: "en",
