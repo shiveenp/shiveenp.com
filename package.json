@@ -1,7 +1,8 @@
 {
-	"name": "eleventy-base-blog",
+	"name": "shiveenp-blog",
 	"version": "8.0.0",
-	"description": "A starter repository for a blog web site using the Eleventy site generator.",
+	"type": "module",
+	"description": "Shiveen Panditas blog built using 11ty",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
 		"build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
@@ -15,9 +16,9 @@
 		"url": "git://github.com/11ty/eleventy-base-blog.git"
 	},
 	"author": {
-		"name": "Zach Leatherman",
-		"email": "zachleatherman@gmail.com",
-		"url": "https://zachleat.com/"
+		"name": "Shiveen Pandita",
+		"email": "blog@shiveenp.com",
+		"url": "https://shiveenp.com/"
 	},
 	"license": "MIT",
 	"engines": {
@@ -32,18 +33,18 @@
 	},
 	"homepage": "https://github.com/11ty/eleventy-base-blog#readme",
 	"devDependencies": {
-		"@11ty/eleventy": "^2.0.1",
-		"@11ty/eleventy-img": "^3.1.0",
+		"@11ty/eleventy": "^3.0.0",
+		"@11ty/eleventy-img": "^5.0.0",
 		"@11ty/eleventy-navigation": "^0.3.5",
 		"@11ty/eleventy-plugin-bundle": "^1.0.4",
 		"@11ty/eleventy-plugin-rss": "^1.2.0",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-		"@flydotio/dockerfile": "^0.3.3",
 		"luxon": "^3.3.0",
 		"markdown-it-anchor": "^8.6.7"
 	},
 	"dependencies": {
 		"markdown-it-footnote": "^3.0.3",
-		"markdown-it-image-figures": "^2.1.1"
+		"markdown-it-image-figures": "^2.1.1",
+		"sharp": "^0.33.5"
 	}
 }
