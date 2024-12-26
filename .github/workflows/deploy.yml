@@ -32,11 +32,10 @@ jobs:
       - name: Deploy to DigitalOcean
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SSH_PASSPHRASE: ${{ secrets.SSH_PASSPHRASE }}
         run: |
           # Start the SSH agent and add the private key
           eval "$(ssh-agent -s)"
-          echo "$SSH_PRIVATE_KEY" | ssh-add - <<< "$SSH_PASSPHRASE"
+          echo "$SSH_PRIVATE_KEY" | ssh-add -
 
           # Disable strict host key checking (to avoid manual confirmation)
           echo "StrictHostKeyChecking no" >> ~/.ssh/config
