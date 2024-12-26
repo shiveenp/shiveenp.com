@@ -32,7 +32,7 @@ jobs:
       - name: Deploy to DigitalOcean
         env:
           SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
-          SEVER_IP: ${{secrets.SERVER_IP}}
+          SERVER_IP: ${{secrets.SERVER_IP}}
         run: |
           # check we have all our ducks aligned
           which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y  )
