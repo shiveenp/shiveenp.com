@@ -33,15 +33,17 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         run: |
+          which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y  )
+          which rsync || ( apt-get update -y && apt-get install rsync -y )
+          eval $(ssh-agent -s)
           # Start the SSH agent and add the private key
           eval "$(ssh-agent -s)"
-          echo "$SSH_PRIVATE_KEY" | ssh-add -
-
+          ssh-add <(echo "$SSH_PRIVATE_KEY" )
           # Disable strict host key checking (to avoid manual confirmation)
           echo "StrictHostKeyChecking no" >> ~/.ssh/config
-
-          # Test SSH connection
-          ssh root@170.64.217.114 "echo 'SSH connection is successful'"
-
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          ssh-keyscan 170.64.217.114 >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
           # Deploy the built site to the droplet using rsync
-          rsync -avz --delete ./_site/ root@170.64.217.114:/var/www/blog
+          scp -r ./_site/ root@170.64.217.114:/var/www/blog
