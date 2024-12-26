@@ -42,4 +42,4 @@ jobs:
           ssh-keyscan 170.64.217.114 >> ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
           # Deploy the built site to the droplet using rsync
-          scp -r ./_site/ root@170.64.217.114:/var/www/blog
+          rsync -avh ./_site/ root@170.64.217.114:/var/www/blog
