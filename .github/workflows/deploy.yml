@@ -31,15 +31,19 @@ jobs:
       # Step 5: Deploy to DigitalOcean via SSH
       - name: Deploy to DigitalOcean
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
+          SEVER_IP: ${{secrets.SERVER_IP}}
         run: |
+          # check we have all our ducks aligned
           which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y  )
           which rsync || ( apt-get update -y && apt-get install rsync -y )
+          # give the ssh agent a tickle
           eval $(ssh-agent -s)
           ssh-add <(echo "$SSH_PRIVATE_KEY")
+          # some unixy permissiony stuff that I hacked around till i got it to work
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
-          ssh-keyscan 170.64.217.114 >> ~/.ssh/known_hosts
+          ssh-keyscan $SERVER_IP >> ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
           # Deploy the built site to the droplet using rsync
-          rsync -avh ./_site/ root@170.64.217.114:/var/www/blog
+          rsync -avh ./_site/ root@$SERVER_IP:/var/www/blog
