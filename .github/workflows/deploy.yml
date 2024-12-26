@@ -1,0 +1,47 @@
+name: Deploy 11ty to DigitalOcean
+
+on:
+  push:
+    branches:
+      - main  # Update this with your deployment branch name
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js (for 11ty build)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18   # Use your desired Node.js version
+
+      # Step 3: Install NPM dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Build the 11ty project
+      - name: Build with 11ty
+        run: npx @11ty/eleventy
+
+      # Step 5: Deploy to DigitalOcean via SSH
+      - name: Deploy to DigitalOcean
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          # Start the SSH agent and add the private key
+          eval "$(ssh-agent -s)"
+          echo "$SSH_PRIVATE_KEY" | ssh-add -
+
+          # Disable strict host key checking (to avoid manual confirmation)
+          echo "StrictHostKeyChecking no" >> ~/.ssh/config
+
+          # Test SSH connection
+          ssh root@170.64.217.114 "echo 'SSH connection is successful'"
+
+          # Deploy the built site to the droplet using rsync
+          rsync -avz --delete ./_site/ root@170.64.217.114:/var/www/blog
