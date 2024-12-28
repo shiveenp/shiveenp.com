@@ -33,20 +33,8 @@
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 
-		{#- Fathom analytics  #}
-	<script>
-	(function(f, a, t, h, o, m){
-		a[h]=a[h]||function(){
-			(a[h].q=a[h].q||[]).push(arguments)
-		};
-		o=f.createElement('script'),
-		m=f.getElementsByTagName('script')[0];
-		o.async=1; o.src=t; o.id='fathom-script';
-		m.parentNode.insertBefore(o,m)
-	})(document, window, '//stats.shiveenp.com/tracker.js', 'fathom');
-	fathom('set', 'siteId', 'ADHXM');
-	fathom('trackPageview');
-	</script>
+		{#- Umami analytics  #}
+		<script defer src="https://stats.shiveenp.com/script.js" data-website-id="707d71b6-82ef-4962-b25c-7085f64a1932"></script>
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
