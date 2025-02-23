@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="37ee578b-0e32-46a2-ae6a-d94b824e34ce" name="Changes" comment="Update hosting details in README&#10;&#10;Replaced outdated hosting information with updated details reflecting deployment on Cloudflare Pages. Simplifies and clarifies the description for better accuracy.">
+      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nojekyll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nvmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_data/metadata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/layouts/base.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/layouts/home.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/layouts/post.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/postslist.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/404.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/about/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/blog.11tydata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/daily-routine.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/dynamodb-gotchas.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/equality-checks-in-kotlin-with-unstructured-data.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/fix-shadow-jar-http4k-jetty.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/introducing-bows3r-small-s3-web-browser-written-in-pure-kotlin.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/on-note-taking-tools.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/post-boot-actions-using-application-events.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/sending-multipart-form-data-using-spring-webtestclient.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/simple-oembed-service-using-http4k.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/software-is-not-a-race.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/spring-boot-reactive-oauth-client-with-coroutines.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/feed/feed.11tydata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/feed/feed.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/feed/json.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/index.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/sitemap/sitemap.xml.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/tags-list.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/tags.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eleventy.config.drafts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eleventy.config.images.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eleventy.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/message-box.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/prism-diff.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/favicon.ico" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "shiveenp"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/shiveenp/shiveenp.com.git",
+    "accountId": "d0787428-0845-4638-9c0e-37150500916f"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2tQo9exwM5ZZ28hr7yYyMY9mTql" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "<unknown>",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37ee578b-0e32-46a2-ae6a-d94b824e34ce" name="Changes" comment="" />
+      <created>1740293509585</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740293509585</updated>
+      <workItem from="1740293510919" duration="309000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update hosting details in README&#10;&#10;Replaced outdated hosting information with updated details reflecting deployment on Cloudflare Pages. Simplifies and clarifies the description for better accuracy.">
+      <option name="closed" value="true" />
+      <created>1740293797574</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740293797574</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update hosting details in README&#10;&#10;Replaced outdated hosting information with updated details reflecting deployment on Cloudflare Pages. Simplifies and clarifies the description for better accuracy." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update hosting details in README&#10;&#10;Replaced outdated hosting information with updated details reflecting deployment on Cloudflare Pages. Simplifies and clarifies the description for better accuracy." />
+  </component>
+</project>
